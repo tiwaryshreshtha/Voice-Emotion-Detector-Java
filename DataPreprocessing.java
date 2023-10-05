@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-public class PreprocessingStep {
+public class Preprocessing {
     public static void main(String[] args) {
         String cremaDirectory = "AudioWAV";
         File[] cremaFiles = new File(cremaDirectory).listFiles();
