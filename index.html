@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Emotion Detector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header style="background-color: #146aff; color: #fff; text-align: center;">
+        <h1>Voice Emotion Detector</h1>
+    </header>
+    <section class="container" style="background-color: #fab86d; color: #fff; text-align: center; padding: 20px;">
+        <h2>Interactive Visualizations</h2>
+        <div class="video-container">
+            <video controls autoplay loop muted width="800" height="400">
+                <source src="starter-template-copy.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <main>
+        <section class="container">
+            <h1 align = "center" style="font-weight: bold; font-size: 38px; color: black;">Speech Emotion Recognition</h1>
+            <p align = "center" class="normal-text" style="color: grey;">Please upload an audio file</p>
+            <div class="grey-section" style="background-color: lightgrey; padding: 20px; border-radius: 5px; text-align: center;">
+                <div class="upload-section">
+                    <div class="drag-drop-container">
+                        <img src="cloud-upload.png" height="50" width="50" alt="Drag and Drop" class="drag-drop-icon">
+                        <div class="upload-text" style="font-size: 20px; color: grey;">
+                            Drag and drop file here
+                            <br>
+                            <span style="font-size: 14px; color: grey;">Limit 200MB per file &#8226; WAV</span>
+                        </div>
+                    </div>
+                    <br>
+                    <input type="file" id="audio-file" accept=".wav" required style="display: none;">
+                    <label for="audio-file" class="upload-button" style="background-color: red; color: white;padding: 10px 20px; border-radius: 5px; cursor: pointer;">Browse files</label>
+                </div>
+                <br>
+                <div class="uploaded-file" id="uploaded-file" style="display: none;">
+                    <div class="file-info">
+                        <img src="file img.png" height="40" width="50" alt="File Icon" class="file-icon" style="margin-right: 10px;">
+                        <span id="file-info-text" style="color: black;"></span>
+                    </div>
+                    <br>
+                    <button class="delete-button" style="background-color: red; color: white; padding: 5px 10px; border-radius: 5px; cursor: pointer;">X</button>
+                </div>
+            </div>
+            <div align="center" class="centered-container"> <!-- Centered container for the "Analyze" button and result -->
+                <button align="center" id="analyze-button" style="background-color: #fcff33; font-weight: bold; color: #333; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">Analyze</button>
+                <div class="result-container" style="margin-top: 20px; padding: 20px; background-color: #f5f5f5; border-radius: 5px; text-align: center; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
+                    <div id="emotion-result" style="font-size: 24px; font-weight: bold; color: green; margin-top: 10px;"></div>
+                </div>
+            </div>
+        </section>
+    </main>    
+    <section class="container" style="background-color: #fab86d; text-align: center; padding: 20px;">
+        <h2>AI-Powered Emotion Analysis</h2>
+        <p>Our advanced AI algorithms provide accurate emotion analysis.</p>
+    </section>
+    <footer style="background-color: #007BFF; color: #fff; text-align: center; padding: 10px 0;">
+        <p>&copy; Created by Shreshtha Tiwary | All Rights Reserved | Contact: tiwaryshreshtha@gmail.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
